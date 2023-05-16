@@ -1,12 +1,16 @@
 # msg-php
 type-aware CLI messages for debugging PHP scripts
 
+## Tested on
+
+  + PHP 7.4.33
+
 ## Synopsis
 
 A single function that takes one parameter, a variable `$var`, with a default value of `NULL`.
 
 ```php
-void msg($var = null)
+msg(mixed $var = null): void
 ```
 ## Quick Start
 
