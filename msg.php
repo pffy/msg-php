@@ -9,12 +9,16 @@
 
 # msg returns output for debugging
 
-function msg($var = '') {
+function msg($var = null) {
+
+
 
   switch(gettype($var)) {
     case 'string':
       echo 'TYPE-STRING: ';
-      echo (string)$var;
+      echo $s = (string)$var;
+      echo PHP_EOL;
+      echo '--LENGTH: ' . strlen($s);
       break;
     case 'float':
 #    case 'real': # depercated in PHP8
@@ -47,7 +51,7 @@ function msg($var = '') {
       echo 'TYPE-RESOURCE: ';
       echo $r = get_resource_type($var);
       echo PHP_EOL;
-      echo 'ID: ' . (int)$var;
+      echo '--ID: ' . (int)$var;
       break;
     default:
       # derp, whatever
