@@ -1,7 +1,7 @@
 <?php
 
 ## name     : msg.php
-## purpose  : type-aware CLI output
+## purpose  : type-aware CLI output for debugging vars
 ## license  : MIT
 ## git      : https://github.com/pffy/msg-php
 ## requires : PHP 7.4.33
