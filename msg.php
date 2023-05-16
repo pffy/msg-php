@@ -11,7 +11,7 @@ function msg($var) {
 
   switch(gettype($var)) {
     case 'string':
-      echo $var;
+      echo (string)$var;
       break;
     case 'float':
       echo (float)$var;
@@ -27,7 +27,7 @@ function msg($var) {
       var_dump($var);
       break;
     default:
-      #derp, whatever
+      # derp, whatever
       var_dump($var);
       break;
   }
