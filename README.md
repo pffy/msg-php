@@ -1,6 +1,13 @@
 # msg-php
 type-aware CLI messages for debugging PHP scripts
 
+## Synopsis
+
+A single function that takes one parameter, a variable `$var`, with a default value of `NULL`.
+
+```php
+void msg($var = null)
+```
 ## Quick Start
 
 Create a new folder `foo` in home directory:
