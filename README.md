@@ -32,18 +32,33 @@ In the folder `foo`, create a new file called `test.php`. Copy and paste the fol
 
 require_once 'msg-php/msg.php';
 
-msg(); // array
+# NULL
+msg(); // NULL
 msg(null); // NULL
+
+# boolean
 msg(false); // boolean
 msg(true); // boolean
+
+# double / float
 msg(2.1212); // double (float)
 msg(pi()); // double (float)
+
+# integer / int
 msg(1); // integer
+
+# string
 msg(''); // string
 msg('derp'); // string
+
+# array
 msg([]); // array
+
+# objects
 msg(new stdClass); // object (stdClass)
 msg((object)[]); // object (stdClass)
 msg(new class{}); // object (anonymous class)
+
+# resources
 msg(curl_init()); // resource, curl
 ```
